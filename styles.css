@@ -81,6 +81,7 @@ p {
 .hot-link {
   color: var(--primary);
   font-weight: bold;
+  text-align: center;
   animation: glow 0.5s steps(4) infinite;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -88,7 +89,7 @@ p {
 
 .hot-link:hover {
   color: var(--secondary);
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 @keyframes glow {
