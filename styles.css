@@ -30,11 +30,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: var(--bg);
   background: #000000;
-  background: linear-gradient(
-    14deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(58, 58, 122, 1) 100%
-  );
+  background: linear-gradient(14deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(58, 58, 122, 1) 100%);
   width: 100%;
   min-height: 100%;
   margin: 0;
@@ -96,22 +94,27 @@ p {
   0% {
     color: var(--primary);
   }
+
   100% {
     color: var(--secondary);
   }
 }
 
 @keyframes jiggle {
+
   0%,
   100% {
     transform: rotate(0deg);
   }
+
   25% {
     transform: rotate(5deg);
   }
+
   50% {
     transform: rotate(-5deg);
   }
+
   75% {
     transform: rotate(4deg);
   }
@@ -132,26 +135,4 @@ p {
 
 .icon:active {
   color: var(--primary-semi);
-}
-
-.invisible-link {
-  position: fixed;
-  top: 0;
-  left: 75vw; /* 75% from the left */
-  width: 4px;
-  height: 4px;
-  z-index: 9999;
-  background: transparent;
-  border: none;
-  outline: none;
-  text-decoration: none;
-  display: block;
-  pointer-events: auto;
-}
-
-.invisible-link:focus,
-.invisible-link:hover,
-.invisible-link:active,
-.invisible-link:visited {
-  all: unset;
 }
