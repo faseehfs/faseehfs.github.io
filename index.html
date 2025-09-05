@@ -11,104 +11,21 @@
         />
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">FaseehFS</a>
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
+        <div
+            class="container-fluid vh-100 d-flex flex-column justify-content-center align-items-center"
+        >
+            <h1>Welcome!</h1>
+            <div class="btn-group pt-3 pb-4" role="group">
+                <a href="https://github.com/faseehfs/" class="btn btn-primary"
+                    >GitHub</a
                 >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div
-                    class="collapse navbar-collapse"
-                    id="navbarSupportedContent"
+                <a href="https://faseehfs.itch.io/" class="btn btn-primary"
+                    >Itch.io</a
                 >
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a
-                                class="nav-link"
-                                href="https://github.com/faseehfs/"
-                                >GitHub</a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://faseehfs.itch.io/"
-                                >Itch.io</a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a
-                                class="nav-link"
-                                href="https://www.youtube.com/channel/UCTbcWqD6c_2uandjZwJJxJA/"
-                                >YouTube</a
-                            >
-                        </li>
-                    </ul>
-                </div>
             </div>
-        </nav>
-
-        <main class="container py-2">
-            <div class="row">
-                <div class="col-12 col-lg-8">
-                    <h1>FaseehFS</h1>
-                    <p>
-                        I just released <i>The Stellar Expedition</i> v1.2.0
-                        with some handy updates. The game now shows your
-                        trajectory in real time, so you know exactly where your
-                        spacecraft will land—making it much more playable than
-                        before, when only I could handle it.
-                    </p>
-                    <p>
-                        Trajectories can still be slightly off in rare edge
-                        cases. On very low-end mobiles, FPS can drop with long
-                        trajectories, though that’s uncommon. The processing
-                        time would have been halved if I had calculated the past
-                        and future trajectories in parallel, but I didn’t think
-                        of that during development 🙁.
-                    </p>
-                    <p>
-                        Data handling is more reliable too. The game now detects
-                        corrupted files and tries to fix them before launch; if
-                        repair fails, it resets the file so the game still loads
-                        instead of crashing.
-                    </p>
-                    <p>
-                        Also, the game now has all levels unlocked, so you won’t
-                        get stuck or have to spend time completing everything
-                        just to see the full game. Completed levels show a small
-                        check mark, so you still get that sense of achievement.
-                        Go ahead and play the game by clicking the link below.
-                    </p>
-                </div>
-                <div class="col-12 col-lg-4">
-                    <h1>Links</h1>
-                    <div class="d-flex flex-wrap gap-2">
-                        <a
-                            href="https://faseehfs.itch.io/the-stellar-expedition"
-                            class="btn btn-primary"
-                            >The Stellar Expedition</a
-                        >
-                        <a
-                            href="https://faseehfs.itch.io/apple-jump"
-                            class="btn btn-primary"
-                            >Apple Jump</a
-                        >
-                        <a
-                            href="https://faseehfs.github.io/shoop/"
-                            class="btn btn-primary"
-                            >Shoop</a
-                        >
-                    </div>
-                </div>
-            </div>
-        </main>
+            <a href="https://faseehfs.itch.io/the-stellar-expedition">TSE</a>
+            <a href="https://faseehfs.github.io/shoop/">Shoop</a>
+        </div>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     </body>
