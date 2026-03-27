@@ -1,0 +1,12 @@
+html {
+  background-color: rgb(245, 245, 245);
+}
+
+body {
+  background-color: white;
+  color: rgb(5, 5, 5);
+  width: 100%;
+  max-width: 50rem;
+  margin: auto;
+  padding: 1rem;
+}
