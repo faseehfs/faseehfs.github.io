@@ -7,7 +7,8 @@
 :root {
   --background: white;
   --foreground: rgb(24, 24, 24);
-  --link: rgb(45, 45, 104);
+  --link: #007bff;
+  --link-visited: #b45309;
   --border: rgb(146, 146, 146);
 }
 
@@ -15,7 +16,8 @@
   :root {
     --background: rgb(32, 32, 32);
     --foreground: rgb(227, 227, 227);
-    --link: rgb(178, 178, 255);
+    --link: #7dd3fc;
+    --link-visited: #ca8a04;
     --border: rgb(146, 146, 146);
   }
 }
@@ -34,7 +36,16 @@ body {
 }
 
 a {
+  text-decoration: none;
   color: var(--link);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: var(--link-visited);
 }
 
 hr {
